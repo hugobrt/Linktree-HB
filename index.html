@@ -188,14 +188,14 @@ canvas { position:fixed;inset:0;z-index:3;pointer-events:none; }
 .divider-line { flex:1; height:1px; background:linear-gradient(90deg,transparent,rgba(201,168,76,0.25),transparent); }
 .divider-icon { font-size:9px; color:var(--gold); letter-spacing:4px; opacity:0.7; }
 
-/* ── LINKS — DARK LUXURY STYLE ── */
+/* ── LINKS — un genre de liquid glass mmh ca ressemble 🤣 ── */
 .links { width:100%; display:flex; flex-direction:column; gap:9px; }
 
 .link-btn {
   position:relative;
   display:flex; align-items:center; gap:14px;
   width:100%; padding:14px 18px;
-  /* dark base with very subtle warm tint */
+  /* base*/
   background: linear-gradient(135deg, rgba(22,18,32,0.92) 0%, rgba(16,13,24,0.96) 100%);
   border:1px solid rgba(201,168,76,0.1);
   border-radius:14px;
@@ -208,7 +208,7 @@ canvas { position:fixed;inset:0;z-index:3;pointer-events:none; }
 }
 .link-btn.visible { opacity:1; transform:translateY(0); }
 
-/* gold shimmer sweep */
+/* gold */
 .link-btn::after {
   content:'';
   position:absolute; top:0; left:-120%;
@@ -217,7 +217,7 @@ canvas { position:fixed;inset:0;z-index:3;pointer-events:none; }
   transform:skewX(-15deg);
   transition:left 0.65s ease;
 }
-/* hover glow fill */
+/* hover glow */
 .link-btn::before {
   content:'';
   position:absolute; inset:0;
@@ -512,7 +512,7 @@ function draw() {
 }
 draw();
 
-// ── Staggered link entrance ──
+// ── arr link ──
 const btns = document.querySelectorAll('.link-btn');
 btns.forEach((b, i) => {
   setTimeout(() => {
